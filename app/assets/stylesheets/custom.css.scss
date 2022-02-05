@@ -1,0 +1,93 @@
+body {
+  font-family: 'Poppins', sans-serif;;
+}
+
+@import "colors";
+
+.bg {
+  &-brown {
+    background: $brown !important;
+    &-light {
+      background-color: $brown-light !important;
+    }
+  }
+  &-green {
+    background: $green !important;
+    &-light {
+      background: $green-light !important;
+      &er {
+        background: $green-lighter !important;
+      }
+    }
+  }
+}
+
+.text {
+  &-green {
+    color: $green !important;
+    &-light {
+      color: $green-light !important;
+      &er {
+        color: $green-lighter;
+      }
+    }
+  }
+  &-brown {
+    color: $brown !important;
+  }
+
+  &-dark * {
+    color: #111 !important;
+  }
+
+  &-white * {
+    color: #fff !important;
+  }
+}
+
+.btn {
+  &-primary {
+    background-color: $green-light !important;
+    border-color: $green-light !important;
+    color: #fff !important;
+    &:hover {
+      background-color: $green !important;
+      border-left: $green !important;
+    }
+  }
+  &-secondary {
+    background-color: rgba($color: $brown, $alpha: 0.8);
+    border-color: rgba($color: $brown, $alpha: 0.8);
+    color: #fff;
+    &:hover {
+      background-color: $brown;
+      border-color: $brown;
+    }
+
+  }
+}
+
+// Navbar
+
+// .navbar {
+//   @media only screen and (max-width: 768px) {
+//     border-bottom: 1px solid rgba($color: $brown, $alpha: 0.5);
+//   }
+// }
+
+// Hero
+
+.hero {
+  @media only screen and (max-width: 768px) {
+    padding-top: 1rem !important;
+  }
+  &-image {
+    @media only screen and (max-width: 768px) {
+      margin-top: 3rem;
+    }
+  }
+  & > .row > .col-md-6 {
+    padding-top: 0 !important;
+  }
+}
+
